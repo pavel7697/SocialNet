@@ -1,0 +1,104 @@
+.item {
+  display: grid;
+  grid-template-rows: 1fr minmax();
+}
+
+.name {
+  text-align: center;
+  margin-top: 2px;
+  font-size: 14pt;
+  font-family: "Calibri Light", Calibri, monospace;
+  color: white;
+  text-decoration: none;
+}
+
+.activeLink {
+  text-decoration: none;
+}
+.ava {
+  border-radius: 70px;
+  background-color: rgb(192, 82, 82);
+  margin: 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
+}
+
+.avabg,
+.avabg:before,
+.avabg:after,
+.avabg img.ava {
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.avabg {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.05)
+  );
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.05))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.05)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.05)
+  );
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#0d000000',GradientType=0);
+  padding: 6px;
+  padding-top: 5px;
+  -webkit-box-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #c0d6e0;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  float: left;
+}
+
+.avabg::after {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, rgba(255, 255, 255, 0.1)),
+    color-stop(44%, rgba(255, 255, 255, 0.2)),
+    color-stop(45%, rgba(255, 255, 255, 0)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
+}
+
+.avabg:before,
+.avabg:after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}

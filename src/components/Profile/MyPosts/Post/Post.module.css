@@ -1,0 +1,14 @@
+.item {
+  color: darkred;
+}
+
+.posts {
+}
+
+.content div img {
+  border-radius: 10px;
+}
+
+.posts img {
+  width: 40px;
+}

@@ -1,0 +1,14 @@
+.header {
+  grid-area: header;
+  background-color: green;
+  text-decoration: none;
+  padding: 20px;
+  padding-bottom: 20px;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.header img {
+  width: 60px;
+}
